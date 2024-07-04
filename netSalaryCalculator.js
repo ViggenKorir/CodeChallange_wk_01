@@ -6,15 +6,15 @@ function netSalary(basicSalary, benefits) {
 
     let tax;
     if (grossSalary <= 24000) {
-        tax = grossSalary * 10 / 100;
+        tax = grossSalary * 0.1;
     } else if (grossSalary <= 32333) {
-        tax = grossSalary * 25 / 100;
+        tax = grossSalary * 0.25;
     } else if (grossSalary <= 500000) {
-        tax = grossSalary * 30 / 100;
+        tax = grossSalary * 0.3;
     } else if (grossSalary <= 800000) {
-        tax = grossSalary * 32.5 / 100;
+        tax = grossSalary * 0.325;
     } else if (grossSalary > 800000) {
-        tax = grossSalary * 35 / 100;
+        tax = grossSalary * 0.35;
     }
 
     let netSalary = grossSalary - tax;
